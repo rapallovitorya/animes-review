@@ -1,0 +1,5 @@
+run backend
+>> node server.js
+
+run frontend
+>> npm start
