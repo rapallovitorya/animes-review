@@ -1,13 +1,21 @@
-const express = require("express");
-const db = require("./config/db"); // Ensure you have a folder named 'config' with db.js in it
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const usersRoutes = require('./routes/users');
+const animesRoutes = require('./routes/animes');
+const reviewsRoutes = require('./routes/reviews');
 
 const app = express();
 const PORT = 3001;
 
-// Test Route
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// Middleware
+app.use(cors());
+app.use(bodyParser.json());
+
+// Routes
+app.use('/api/users', usersRoutes);
+app.use('/api/animes', animesRoutes);
+app.use('/api/reviews', reviewsRoutes);
 
 // Start the server
 app.listen(PORT, () => {

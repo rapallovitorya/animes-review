@@ -1,7 +1,27 @@
-run backend
+### run backend
+go to animes-review/backend (terminal)
 >> node server.js
 
-run frontend
+### run frontend
+go to animes-review/frontend (terminal)
 >> npm start
 
-Testing
+Install - Backend (animes-review/backend)
+>> npm install express
+>> npm install mysql2
+>> npm install cors
+
+Install - Frontend (animes-review/frontend)
+>> npm install axios (for api requests)
+>> npm install react-router-dom
+>> npm install bootstrap
+
+
+To Do:
+- logout button
+- apply style/css
+
+
+Possible questions? 
+- backend: why router? > to user routes "/users" "/animes" "/reviews"
+- frontend: 
