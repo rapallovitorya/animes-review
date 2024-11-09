@@ -1,6 +1,10 @@
+### run database (populate database)
+go to animes-review/backend (terminal)
+>> npm run seed
+
 ### run backend
 go to animes-review/backend (terminal)
->> node server.js
+>> npm run dev
 
 ### run frontend
 go to animes-review/frontend (terminal)
@@ -18,8 +22,8 @@ Install - Frontend (animes-review/frontend)
 
 
 To Do:
-- logout button
-- apply style/css
+- understand the code
+- test in postman
 
 
 Possible questions? 
