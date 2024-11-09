@@ -17,7 +17,7 @@ const calculateAverageRating = (animeId, callback) => {
   });
 };
 
-// Create a review for a specific anime
+// Create a review
 router.post('/:animeId/reviews', (req, res) => {
   const animeId = req.params.animeId;
   const { user_id, review_text, rating } = req.body;
@@ -80,7 +80,7 @@ router.get('/', (req, res) => {
   });
 });
 
-// Update an anime
+// Update an anime ***
 router.put('/:id', (req, res) => {
   const { title, genre, episodes, release_year } = req.body;
   db.query('UPDATE animes SET title = ?, genre = ?, episodes = ?, release_year = ? WHERE id = ?', [title, genre, episodes, release_year, req.params.id], (err, results) => {
@@ -89,7 +89,7 @@ router.put('/:id', (req, res) => {
   });
 });
 
-// Get an anime
+// Get an anime ***
 router.get('/:id', (req, res) => {
   db.query('SELECT * FROM animes WHERE id = ?', [req.params.id], (err, results) => {
     if (err) return res.status(500).send(err);
@@ -97,7 +97,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
-// Delete an anime
+// Delete an anime ***
 router.delete('/:id', (req, res) => {
   db.query('DELETE FROM animes WHERE id = ?', [req.params.id], (err, results) => {
     if (err) return res.status(500).send(err);

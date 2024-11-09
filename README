@@ -21,11 +21,26 @@ Install - Frontend (animes-review/frontend)
 >> npm install bootstrap
 
 
+
+### Routes:
+>> user : login
+>> anime : get all
+>> anime : create an anime
+>> anime-reviews : get all reviews by animeId
+>> anime-reviews : create a review
+
+
+
 To Do:
-- understand the code
+- delete anime
+- edit anime
+- fix average
+
+To Do:
+- run the project (set up database, run seed)
+- understand the project
 - test in postman
 
-
 Possible questions? 
-- backend: why router? > to user routes "/users" "/animes" "/reviews"
+- backend: 
 - frontend: 

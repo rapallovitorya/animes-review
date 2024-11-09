@@ -18,7 +18,7 @@ router.post('/login', (req, res) => {
 
     // Optional: return username on successful login
     const user = results[0];
-    res.status(200).json({ message: 'Login successful', username: user.username });
+    res.status(200).json({ id: user.id, username: user.username, email: user.email, message: 'Login successful' });
   });
 });
 
