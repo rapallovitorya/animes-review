@@ -21,7 +21,6 @@ Install - Frontend (animes-review/frontend)
 >> npm install bootstrap
 
 
-
 ### Routes:
 >> user : login
 >> anime : get all
